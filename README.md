@@ -39,6 +39,7 @@ GROUP BY Dimproduct.ProductName
 ORDER BY Total_Sold DESC; 
 
 Resultado:
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/d8ba5591-28c0-4eba-9a8f-5a6239f0c190)
 
 --2 QUAIS AS CAEGORIAS MAIS LUCRATIVAS?
@@ -60,6 +61,7 @@ GROUP BY DimProductCategory.ProductCategoryName
 ORDER BY LUCRO DESC;
 
 Resulado:
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/6f4cb0f2-abe9-4487-8005-ea7d9899edf0)
 
 --3 COMO AS VENDAS VARIAM MENSALMENTE?
@@ -79,6 +81,7 @@ GROUP BY YEAR(DateKey), MONTH(DateKey)
 ORDER BY ANO, MES;
 
 Resultado:
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/d0ad3e51-3e0d-40e1-8a1e-7d97433d71eb)
 
 --4 QUAIS LOJAS TEM O MELHOR DESEMPENHO?
@@ -98,6 +101,7 @@ GROUP BY DimStore.StoreName
 ORDER BY VENDAS DESC;
 
 Resultado:
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/358f6029-e745-4035-a39c-59ab8c2fb812)
 
 --5 QUAIS CLIENTES MAIS VALIOSOS PARA LOJAS ONLINE?
@@ -116,6 +120,7 @@ GROUP BY CONCAT(DimCustomer.FirstName,' ',DimCustomer.LastName)
 ORDER BY GASTO DESC;
 
 Resultado:
+
  ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/5e159fc0-22ca-407f-8e1d-1a79fca8ce6f)
 
  --6 QUAIS REGIÕES MAIS VENDERAM?
@@ -134,6 +139,7 @@ GROUP BY DimGeography.RegionCountryName
 ORDER BY VENDAS DESC;
 
 Resultado:
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/ec0e689a-7dcc-4800-9b2f-b720f53870ca)
 
 --7 QUAL IMPACTO DAS PROMOÇÕES NAS VENDAS?
@@ -148,6 +154,7 @@ GROUP BY DimPromotion.PromotionType
 ORDER BY SUM(FactSales.SalesAmount) DESC;
 
 Resultado:
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/54d9907c-1640-47f5-9407-1f8b6fb59c8c)
 
 --8 QUAIS AS TENDENCIAS DE DEVOLUÇÃO DE PRODUTO?
@@ -160,6 +167,7 @@ GROUP BY DimProduct.ProductName
 ORDER BY COUNT(FactSales.ReturnQuantity) DESC;
 
 Resultado: 
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/727b65a4-cd00-4eb1-95fb-06765ed5df20)
 
 --9 QUAL O TEMPO MÉDIO DE PERMANÊNCIA DOS FUNCIONARIOS DA EMPRESA
@@ -173,6 +181,7 @@ FROM DimEmployee
 WHERE EndDate IS NOT NULL;
 
 Resultado 
+
 ![image](https://github.com/leosachetto/PortifolioSQL/assets/48931853/0c706538-e35f-42e5-b974-5886ce0c1dd9)
 
 
