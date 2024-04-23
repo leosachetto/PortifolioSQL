@@ -1,6 +1,6 @@
 link do Dtabase CONTOSO: https://www.microsoft.com/en-us/download/details.aspx?id=18279
 
-Nessa foram respondias as seguintes perguntas de negócio:
+Nessa análise foram respondias as seguintes perguntas de negócio em SQL do banco de dados CONTOSO:
 
  --1 QUAIS SÃO OS PRODUTOS MAIS VENDIDOS
  
