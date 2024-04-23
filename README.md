@@ -1,5 +1,7 @@
 link do Dtabase CONTOSO: https://www.microsoft.com/en-us/download/details.aspx?id=18279
+
 Nessa foram respondias as seguintes perguntas de negócio:
+
  --1 QUAIS SÃO OS PRODUTOS MAIS VENDIDOS
  --2 QUAIS AS CAEGORIAS MAIS LUCRATIVAS?
  --3 COMO AS VENDAS VARIAM MENSALMENTE?
