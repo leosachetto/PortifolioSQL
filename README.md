@@ -36,7 +36,7 @@ JOIN DimProduct ON FactSales.ProductKey = DimProduct.Productkey
 
 GROUP BY Dimproduct.ProductName
 
-ORDER BY Total_Sold DESC; 
+ORDER BY TOTAL_VENDIDO DESC; 
 
 Resultado:
 
