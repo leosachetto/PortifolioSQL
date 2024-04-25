@@ -4,7 +4,7 @@ Nessa análise foram respondias as seguintes perguntas de negócio em SQL do ban
 
  --1 QUAIS SÃO OS PRODUTOS MAIS VENDIDOS
  
- --2 QUAIS AS CAEGORIAS MAIS LUCRATIVAS?
+ --2 QUAIS AS CATEGORIAS MAIS LUCRATIVAS?
  
  --3 COMO AS VENDAS VARIAM MENSALMENTE?
  
