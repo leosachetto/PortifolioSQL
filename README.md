@@ -144,9 +144,13 @@ Resultado:
 
 --7 QUAL IMPACTO DAS PROMOÇÕES NAS VENDAS?
 SELECT 
+
 	DimPromotion.PromotionType AS TIPO_PROMOCAO,
+ 
 	SUM(FactSales.SalesAmount) AS VENDAS_C_PROMOCAO
+ 
 FROM FactSales
+
 JOIN DimPromotion ON FactSales.PromotionKey = DimPromotion.PromotionKey
 
 GROUP BY DimPromotion.PromotionType
@@ -160,10 +164,15 @@ Resultado:
 --8 QUAIS AS TENDENCIAS DE DEVOLUÇÃO DE PRODUTO?
 SELECT 
 	DimProduct.ProductName AS PRODUTO, 
+ 
 	COUNT(FactSales.ReturnQuantity) AS NUMERO_DEVOLUCAO
+ 
 FROM FactSales
+
 JOIN DimProduct ON FactSales.ProductKey = DimProduct.ProductKey
+
 GROUP BY DimProduct.ProductName
+
 ORDER BY COUNT(FactSales.ReturnQuantity) DESC;
 
 Resultado: 
